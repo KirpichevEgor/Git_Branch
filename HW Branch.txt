@@ -1,0 +1,73 @@
+0. Создать репозиторий на ГитХабе Git_Branch
+Копируем на локальный
+git clone https://github.com/KirpichevEgor/Git_Branch.git
+1. На локальном репозитории сделать ветки для:
+- Postman
+- Jmeter
+- CheckLists
+- Bag Reports
+- SQL
+- Charles
+- Mobile testing
+
+
+git branch Postman
+git branch Jmeter
+git branch CheckLists
+git branch Bag_Reports
+git branch SQL
+git branch Charles
+git branch Mobile_testing
+
+
+
+2. Запушить все ветки на внешний репозиторий
+git push origin Bag_Reports Charles CheckLists Jmeter Mobile_testing Postman SQL
+
+3. В ветке Bag Reports сделать текстовый документ со структурой баг репорта
+git checkout Bag_Reports
+cat > bag_reports.txt
+- ID
+
+- Название
+
+- Краткое описание
+
+- Подробное описание
+
+- Шаги по воспроизведению
+
+- Воспроизводимость
+
+- Важность
+
+- Срочность
+
+- Фактический результат
+
+- Ожидаемый результат
+
+- Симптом
+
+- Возможность обойти
+
+- Комментарий
+
+- Приложение
+
+git add bag_reports.txt
+git commit -m "first text in this branch"
+
+4. Запушить структуру багрепорта на внешний репозиторий
+git push --set-upstream origin Bag_Reports
+5. Вмержить ветку Bag Reports в Main
+git checkout main
+git merge Bag_Reports -m "merge couple branchs"
+
+6. Запушить main на внешний репозиторий.
+git push
+
+7. В ветке CheckLists набросать структуру чек листа.
+8. Запушить структуру на внешний репозиторий
+9. На внешнем репозитории сделать Pull Request ветки CheckLists в main
+10. Синхронизировать Внешнюю и Локальную ветки Main
