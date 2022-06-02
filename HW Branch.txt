@@ -68,6 +68,28 @@ git merge Bag_Reports -m "merge couple branchs"
 git push
 
 7. В ветке CheckLists набросать структуру чек листа.
+
+cat > Check_List.txt
+Структура Чек-Листа
+1 .Заголовок
+Описание проекта
+2. Подзаголовок
+Название функционала, отдельного элемента продукта (Например: Поле поиска)
+3. Краткое описание теста
+Небольшое описание действия или пункта.
+
+git add .
+git commit -m "create check_list txt"
+
 8. Запушить структуру на внешний репозиторий
+
+git push --set-upstream origin CheckLists
+
 9. На внешнем репозитории сделать Pull Request ветки CheckLists в main
+Зайти на сайт ГИТХАБ
+Нажать кнопку Pull Request
+
 10. Синхронизировать Внешнюю и Локальную ветки Main
+
+git fetch
+git pull
